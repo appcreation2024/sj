@@ -2223,7 +2223,10 @@ Blockly.Versioning.AllUpgradeMaps =
     // AI2: Add HTMLFormat property
     4: "noUpgrade",
 
-    5: "noUpgrade"
+    5: "noUpgrade",
+
+    // AI2: Click & LongClick events are added.
+    6: "noUpgrade"
 
   }, // End Label upgraders
 
