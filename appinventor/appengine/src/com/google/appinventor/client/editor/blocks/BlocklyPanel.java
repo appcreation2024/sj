@@ -948,10 +948,9 @@ public class BlocklyPanel extends HTMLPanel {
       .checkAllBlocksForWarningsAndErrors();
   }-*/;
 
-  native void setBlocksLanguageVersion(int systemVersion, int blocksVersion)/*-{
-    var type = this.@com.google.appinventor.client.editor.blocks.BlocklyPanel::workspace.editorType;
-    AI.Blockly.Target[type].SYSTEM_VERSION = systemVersion;
-    AI.Blockly.Target[type].BLOCKS_VERSION = blocksVersion;
+  static native void setLanguageVersion(int yaVersion, int blocksVersion)/*-{
+    $wnd.YA_VERSION = yaVersion;
+    $wnd.BLOCKS_VERSION = blocksVersion;
   }-*/;
 
   public static native String getCompVersion() /*-{

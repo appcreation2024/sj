@@ -121,7 +121,7 @@ public abstract class BlocksEditor<S extends SourceNode, T extends DesignerEdito
     this.componentDatabase = componentDatabase;
     entityName = blocksNode.getProjectId() + "_" + blocksNode.getEntityName();
     blocksArea = new BlocklyPanel(entityName, target);
-    blocksArea.setBlocksLanguageVersion(systemVersion, language.getVersion());
+    blocksArea.setLanguageVersion(systemVersion, language.getVersion());
     blocksArea.setWidth("100%");
     // This code seems to be using a rather old layout, so we cannot simply pass 100% for height.
     // Instead, it needs to be calculated from the client's window, and a listener added to Window
